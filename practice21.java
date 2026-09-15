@@ -1,17 +1,10 @@
-//Search an element in an array
+//Count words in a string
+
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {10, 20, 30, 40, 50};
-        int target = 30;
-        boolean found = false;
+        String str = "Java is very powerful";
+        String[] words = str.split(" ");
 
-        for (int num : arr) {
-            if (num == target) {
-                found = true;
-                break;
-            }
-        }
-
-        System.out.println(found ? "Found" : "Not Found");
+        System.out.println("Word count = " + words.length);
     }
 }

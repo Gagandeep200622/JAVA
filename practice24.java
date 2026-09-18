@@ -1,15 +1,23 @@
-// print the table of 2
+//Java Output Formatting problem.
 
-import java.util.*;
 
-public class Main{
-    public static void main(String[] args){
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n =sc.nextInt();
-        for(int i=1;i<=10;i++){
-           
-             System.out.println(n + " x " + i + " = " + (n * i));
-            
+
+        System.out.println("================================");
+
+        for (int i = 0; i < 3; i++) {
+            String s = sc.next();
+            int n = sc.nextInt();
+
+            System.out.printf("%-15s%03d%n", s, n);
         }
+
+        System.out.println("================================");
+
+        sc.close();
     }
 }
